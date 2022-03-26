@@ -1,0 +1,9 @@
+module BufferApp {
+    interface Buffer {
+       boolean put(in string elemento);
+       boolean get(out string elemento);
+       boolean read(out string elemento);
+       boolean readAll(out string elemento);
+       oneway void shutdown();
+    };
+};
